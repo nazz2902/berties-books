@@ -1,43 +1,60 @@
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: darkcyan;
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fbf0b2;
+  color: #000000;
+  text-align: center;
 }
 
+h1,
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: cadetblue;
+  color: #ffc7ea;
 }
 
-p,li {
-    font-family: Arial, Helvetica, sans-serif;
+p {
+  color: #000000;
 }
 
-a:link {
-    color: orangered;
-    text-decoration: none;
-    padding:5px;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: tomato;
-    text-decoration: none;
-    padding:5px;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: orangered;
-    padding:5px;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-    text-decoration: none;
-    padding:5px;
-  }
+li {
+  color: #d8b4f8;
+  list-style-type: none;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #caedff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+}
+
+th {
+  background-color: #ffc7ea;
+  color: #000000;
+}
+
+td {
+  background-color: #caedff;
+}
+
+a:link,
+a:visited {
+  color: #d8b4f8;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #ffffff;
+  background-color: #ffc7ea;
+  padding: 5px;
+  border-radius: 5px;
+}

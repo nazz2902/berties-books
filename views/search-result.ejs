@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Search Results</h1>
+
+    <h2>Basic Search Results (Exact Match)</h2>
+    <ul>
+      <!-- Loop through each book in basicResults array -->
+      <% searchResults.basicResults.forEach(book => { %>
+      <!-- List item for each book, displaying the book name and price -->
+      <li><%= book.name %> - £<%= book.price.toFixed(2) %></li>
+      <% }); %>
+    </ul>
+
+    <h2>Advanced Search Results (Partial Match)</h2>
+    <ul>
+      <!-- Loop through each book in advancedResults array -->
+      <% searchResults.advancedResults.forEach(book => { %>
+      <li><%= book.name %> - £<%= book.price.toFixed(2) %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
